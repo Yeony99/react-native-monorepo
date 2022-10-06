@@ -1,6 +1,7 @@
 
 import React from "react";
 import {
+  SafeAreaView,
   Platform,
   StyleSheet,
   Text,
@@ -9,7 +10,7 @@ import {
 
 export function App() {
   return (
-    <View>
+    <SafeAreaView>
      <Text style={styles.text}>Hello from React Native! </Text>
       <View style={styles.platformRow}>
         <Text style={styles.text}>Platform: </Text>
@@ -17,7 +18,7 @@ export function App() {
           <Text style={styles.platformValue}>{Platform.OS}</Text>
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 

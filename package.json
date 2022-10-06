@@ -17,13 +17,14 @@
     ]
   },
   "scripts": {
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock",
     "android:metro": "yarn workspace @react-native-monorepo/mobile start",
     "android:start": "yarn workspace @react-native-monorepo/mobile android",
     "android:studio": "yarn workspace @react-native-monorepo/mobile studio",
     "ios:metro": "yarn workspace @react-native-monorepo/mobile start",
     "ios:start": "yarn workspace @react-native-monorepo/mobile ios",
     "ios:xcode": "yarn workspace @react-native-monorepo/mobile xcode",
-    "web:start": "yarn workspace @@react-native-monorepo/web start",
-    "web:build": "yarn workspace @@react-native-monorepo/web build"
+    "web:start": "yarn workspace @react-native-monorepo/web start",
+    "web:build": "yarn workspace @react-native-monorepo/web build"
   }
 }
